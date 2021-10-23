@@ -12,6 +12,7 @@
 	display: flex;
 	align-items: center;
 	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .search_form{
@@ -79,4 +80,130 @@
 	border-radius: 50%;
 	bottom: 0;
 	right: 0;
+}
+
+.slide{
+	border-radius: 20px;
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	padding-left: 100px;
+}
+
+.slide_content{
+	max-width: 400px;
+}
+
+.slide_text_l{
+	background-color: grey;
+	color: #fff;
+}
+
+.slide_title{
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 50px;
+	line-height: 51px;
+}
+
+.slide_text{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 30px;
+}
+
+.bttn_default{
+background: #fff;
+color: #6f6f61;
+}
+
+.bttn_primary{
+	background: #F47322;
+	color: #fff;
+}
+
+.bttn{
+	border-radius: 25px;
+	padding: 12px 52px;
+	display: inline-block;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.slide_summer{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/summer_banner.png);
+}
+
+.promo{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card{
+	width: 570px;
+	min-height: 380px;
+	padding: 32px;
+	margin-bottom: 50px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.promo1{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/promo1.png) no-repeat center / cover;
+}
+
+.promo2{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/promo2.png) no-repeat center / cover;
+}
+
+.card_text_l{
+	background-color: grey;
+	color: #fff;
+}
+
+.card_header{
+	width: 196px;
+}
+.card_title{
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 23px;
+}
+
+.card_desc{
+	font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 23px;
+}
+
+.card_price{
+	display: block;
+	font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 23px;
+margin-bottom: 8px;
+}
+
+.card_delivery{
+	display: block;
+	font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 23px;
+margin-bottom: 25px;
 }
