@@ -333,6 +333,7 @@ color: #6f6f61;
 	line-height: 23px;
 	cursor: pointer;
 	text-decoration: none;
+	color: #000;
 }
 .tab_link.active{
 	color: #F37321;
@@ -470,7 +471,7 @@ footer{
 	margin-left: auto;
 }
 
-.social_limk{
+.social_link{
 	margin-right: 20px;
 	text-decoration: none;
 }
