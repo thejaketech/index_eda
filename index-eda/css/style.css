@@ -4,7 +4,7 @@
 }
 
 .container{
-	width: 1190px;
+	max-width: 1190px;
 	margin: auto;
 }
 
@@ -29,7 +29,7 @@
 .search_input{
 	background-color: transparent;
 	border: none;
-	width: 100%;
+	max-width: 100%;
 	padding: 13px 20px;
 	color: #57565B;
 }
@@ -134,7 +134,7 @@ color: #6f6f61;
 	line-height: 23px;
 }
 
-.bttn_outline{;
+.bttn_outline{
 	padding: 15px 25px;
 	font-weight: 500;
 	font-size: 16px;
@@ -143,6 +143,7 @@ color: #6f6f61;
 	background-color: transparent;
 	border: 2px solid  #F37321;
 	border-radius: 33px;
+	cursor: pointer;
 }
 
 .bttn_center{
@@ -152,13 +153,12 @@ color: #6f6f61;
 }
 
 .bttn_big{
-	width: 315px;
+	max-width: 315px;
 }
 
 .slide_summer{
 	background-repeat: no-repeat;
-	background-size: cover;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/summer_banner.png);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/summer_banner.png)  no-repeat center / cover;
 }
 
 .promo{
@@ -197,7 +197,7 @@ color: #6f6f61;
 }
 
 .card_header{
-	width: 196px;
+	max-width: 196px;
 }
 .card_title{
 	font-weight: 500;
@@ -246,6 +246,7 @@ color: #6f6f61;
 	display: flex;
 	flex-wrap: wrap;
 	margin: -15px;
+	justify-content: center;
 }
 
 .delivery_card{
@@ -340,7 +341,7 @@ color: #6f6f61;
 }
 
 .tab_card{
-	width: 270px;
+	max-width: 270px;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
@@ -353,7 +354,7 @@ color: #6f6f61;
 }
 
 .tab_img{
-	width: 100%;
+	max-width: 100%;
 }
 
 .tab_title{
@@ -417,7 +418,7 @@ color: #6f6f61;
 }
 
 .preim_card{
-	width: 270px;
+	max-width: 270px;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -474,4 +475,104 @@ footer{
 .social_link{
 	margin-right: 20px;
 	text-decoration: none;
+}
+@media (max-width: 1260px){
+	.container{
+		max-width: 960px;
+	}
+	.delivery_week {
+    margin-top: 0px;
+	}
+	.category{
+		margin-top: 50px;
+	}
+	.bttn_center {
+    margin-top: 25px;
+}
+	.search_form{
+		margin-left: 40px;
+		margin-right: 40px;	
+	}
+	.card {
+    width: 460px;
+	}
+	.tabs_content{
+		flex-wrap: wrap;
+	}
+	.tab_card{
+		flex: 50%;
+		max-width: 45%;
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width: 992px){
+	.container{
+		min-width: 740px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.slide{
+		min-height: 350px;
+	}
+	.card {
+    margin-right: 10px;
+    margin-left: 10px;
+    flex: calc(50% - 20px);
+	}
+	.preim {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+	.preim_cards{
+		flex-wrap: wrap;
+		justify-content: center;	
+	}
+	.preim_card{
+		flex: 33%;
+		margin: 10px;		
+	}
+}
+
+@media (max-width: 768px){
+	.container{
+		min-width: 560px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.header{
+		flex-wrap: wrap;
+	}
+	.search_form{
+		order: 5;
+		margin: 15px;
+		width: 100%;
+	}
+	.tab_card {
+    max-width: 80%;
+    margin-bottom: 30px;
+}
+.tabs_content{
+	justify-content: center;
+}
+.footer_logo{
+	margin-right: 15px;
+}
+.footer_link{
+	margin-right: 15px;
+}
+	.bttn{
+		padding: 10px 30px;
+	}
+	.delivery_card{
+		    width: calc(50% - 30px);
+	}
+}
+
+@media (max-width: 576px){
+	.container{
+		max-width: 90%;
+}
+
 }
